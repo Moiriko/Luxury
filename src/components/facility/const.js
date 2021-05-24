@@ -14,22 +14,22 @@ export const FacilityList = [
     },
     {
         img:img2,
-        name:"Name",
+        name:"POOLSIDE BAR",
     },
     {
         img:img3,
-        name:"THE GYM",
+        name:"THE SPA",
     },
     {
         img:img4,
-        name:"THE GYM",
+        name:"SWIMMING POOL",
     },
     {
         img:img5,
-        name:"THE GYM",
+        name:"RESTAURANT",
     },
     {
         img:img6,
-        name:"THE GYM",
+        name:"LAUNDRY",
     },
 ]

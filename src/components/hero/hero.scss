@@ -1,0 +1,57 @@
+@import "../global";
+.hero{
+    height: 80vh;
+    position: relative;
+    background: linear-gradient(90deg, rgba(20, 39, 74, 0.5) 0%, rgba(20, 39, 74, 0.5) 100%), url(../../assest/img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    // z-index: 100;
+    &__text{
+        &:nth-child(1){
+            @include font($colorWhite, 50px, 400, $font_mont , 1);
+        }
+        &:nth-child(2){
+            @include font($colorWhite, 154px, 700, $font_gera, 1);
+            letter-spacing: 0.07em;
+        }
+        &:nth-child(3){
+            @include font($colorWhite, 60px, 700, $font_gera, 1.3);
+            letter-spacing: 0.4em;
+        }
+        &:nth-child(4){
+            @include font($colorWhite, 25px, 400, $font_mont, 1);
+            letter-spacing: 0.1em;
+        }
+    }
+    &__center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__button{
+        display: flex;
+        padding: 25px 33px;
+        background: $colorGold;
+        align-items: center;
+        border-radius: 10px;
+        margin: 108px auto 80px;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.1)
+        }
+        &__name{
+            @include font($colorWhite, 25px, 700, $font_mont, 1.1);
+            margin-left: 18px;
+        }
+    }
+    &__scroll{
+        text-align: center;
+        @include font($colorWhite, 25px, 700, $font_mont, 1.1);
+        letter-spacing: 0.05em;
+        &__img{
+        margin: 15px auto 38px;
+        }        
+    }
+}

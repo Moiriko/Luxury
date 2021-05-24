@@ -1,0 +1,13 @@
+@import "../global";
+.btn{
+        @include font($colorWhite, 20px, 700, $font_mont, 1);
+        padding: 20px 60px;
+        background: $colorGold;
+        border-radius: 10px;
+        margin-top: 30px;
+        transition: 0.3s;
+        &:hover{
+                transform: scale(1.05);
+            }
+
+}

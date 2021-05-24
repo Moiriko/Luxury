@@ -1,0 +1,41 @@
+@import "../global";
+.rates{
+    &__title, &__description{
+        text-align: center;
+    }
+    &__container{
+        margin-bottom: 82px;
+    }
+    &__subtitle{
+        @include font($colorWhite, 60px, bold, $font_mont, 1.1);
+        background: $colorBlue;
+        text-align: center;
+        padding: 41px;
+    }
+    &__img{
+        display: block;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: 50px 0 70px;
+        border: 1px solid $colorBlue;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    &__select { 
+        padding-left: 80px;
+        width: 370px;  
+        height: 51px;
+        appearance: none; 
+        overflow: hidden;
+        background: url('../../assest/img/plus.png') no-repeat left; 
+        outline: none;
+        border: none; 
+        text-transform: uppercase;
+        @include font($colorBlue, 25px, bold, $font_mont, 1.3);
+     }
+}
+
+

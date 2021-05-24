@@ -1,0 +1,65 @@
+@import "../global";
+.contact{
+    &__title{
+       text-align: center;
+       @include font($colorWhite, 48px, 700, $font_mont, 1.3);
+       background: $colorBlue;
+        padding: 196px 0 171px;
+    }
+    &__white{
+        padding: 261px 0 463px;
+        background: $colorWhite;
+    }
+    &__adress, &__phone, &__email{
+       @include font($colorBlue, 40px, 400, $font_mont, 1.2);
+
+    }
+    &__map{
+        display: flex;
+        align-items: center;
+       @include font($colorBlue, 40px, 700, $font_mont, 1.2);
+        margin: 28px 0 54px;
+    }
+    &__arrow{
+        padding-left: 30px;
+    }
+    &__data{
+       @include font($colorBlue, 25px, 400, "Arial", 1.2);
+       margin-bottom: 8px;
+    }
+    &__area{
+        margin-bottom: 30px;
+        background: $colorWhite;
+        border: 2px solid rgba(20, 39, 74, 0.5);
+        box-sizing: border-box;
+        outline: none;
+        // overflow: auto;
+        padding: 15px;
+       @include font($colorBlue, 25px, 400, $font_mont, 1);
+    }
+    &__area--big{
+        outline: none;
+        resize: none;
+       @include font($colorBlue, 25px, 400, $font_mont, 1);
+       padding: 10px;
+       margin-bottom: 50px;
+
+    }
+    &__input{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__submit{
+       background: $colorGold; 
+       border-radius: 10px;
+       @include font($colorWhite, 25px, 700, $font_mont, 1.2);
+        padding: 25px 24px;
+        outline: none;
+        max-width: 150px;
+        border: none;
+    }
+    ::-webkit-input-placeholder {color: $colorBlue;}
+    ::-moz-placeholder          {color: $colorBlue;}
+    :-moz-placeholder           {color: $colorBlue;}
+    :-ms-input-placeholder      {color: $colorBlue;}
+}

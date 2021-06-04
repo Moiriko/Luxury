@@ -1,6 +1,5 @@
 import Hero from '../../components/hero';
 import Testimonials from '../../components/testimonials';
-import Footer from '../../components/footer';
 import Facility from '../../components/facility/facility';
 
 function Facilities(){
@@ -9,7 +8,6 @@ function Facilities(){
              <Hero/>
             <Facility/>
             <Testimonials/>
-            <Footer/>
         </div>
     )
 }

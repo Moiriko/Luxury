@@ -9,9 +9,10 @@
     &__name{
         position: absolute;
         @include font($colorBlue, 48px, bold, $font_mont, 1.3);
-        padding: 16px 227px 0 227px;
+        padding: 16px 0;
+        min-width: 684px;
         background: $colorWhite;
         bottom: 0;
-        left: 28%;
+        left: 25%;
     }
 }

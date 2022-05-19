@@ -1,0 +1,32 @@
+@import "../global";
+.testimonials{
+    padding: 115px 0 109px;
+    text-align: center;
+    &__title{
+      @include font($colorBlue, 60px, bold, $font_gera, 1.2);
+    }
+    &__text{
+      @include font($colorBlue, 30px, normal, $font_mont, 1.2);
+      margin: 26px 0 19px;
+    }
+    &__author{
+        @include font($colorBlue, 25px, normal, $font_mont, 1.2);
+    }
+    &__swiper{
+      min-height: 280px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+      color: transparent;
+      top: 52%;
+    }
+    .swiper-button-prev{
+      left: calc(50% - 42px);
+      background: url(../../assest/img/prev.png) no-repeat;
+      background-size: 100%;
+    }
+    .swiper-button-next{
+      left: 50%;
+      background: url(../../assest/img/next.png) no-repeat;
+      background-size: 100%;
+    }
+}

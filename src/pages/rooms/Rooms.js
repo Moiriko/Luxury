@@ -3,10 +3,10 @@ import Rates from '../../components/rates/rates';
 import Testimonials from '../../components/testimonials';
 
 
-function Rooms(){
+function Rooms() {
     return(
         <div>
-        <Hero/>
+        <Hero classHero='rooms'/>
         <Rates/>
         <Testimonials/>
         </div>

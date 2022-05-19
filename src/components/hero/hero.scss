@@ -1,12 +1,11 @@
 @import "../global";
 .hero{
-    height: 90vh;
-    position: relative;
     background: linear-gradient(90deg, rgba(20, 39, 74, 0.5) 0%, rgba(20, 39, 74, 0.5) 100%), url(../../assest/img/hero.jpg);
+    // height: 90vh;
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 300px;
-    // z-index: 100;
+    padding-top: 30vh;
     &__text{
         &:nth-child(1){
             @include font($colorWhite, 50px, 400, $font_mont , 1);
@@ -54,4 +53,14 @@
         margin: 15px auto 38px;
         }        
     }
+}
+.facilities{
+    background: linear-gradient(90deg, rgba(20, 39, 74, 0.5) 0%, rgba(20, 39, 74, 0.5) 100%), url(../../assest/img/hero2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rooms{
+    background:  linear-gradient(90deg, rgba(20, 39, 74, 0.5) 0%, rgba(20, 39, 74, 0.5) 100%), url(../../assest/img/hero3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }

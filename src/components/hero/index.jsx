@@ -1,7 +1,7 @@
 import './hero.scss'
-function Hero(){
+function Hero({classHero = ''}) {
     return(
-            <div className="hero">
+            <div className={`hero ${classHero}`}>
             <div className="container">
             <div className="col-7">
                 <p className="hero__text">WELCOME TO</p>

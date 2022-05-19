@@ -5,7 +5,7 @@ import Facility from '../../components/facility/facility';
 function Facilities(){
     return(
         <div>
-             <Hero/>
+            <Hero classHero='facilities' />
             <Facility/>
             <Testimonials/>
         </div>
